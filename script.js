@@ -33,3 +33,19 @@ paper.addEventListener("click", function() {
 scissors.addEventListener("click", function() {
     playRound("scissors", computerChoice())
 })
+
+
+
+// COMPTER RANDOMLY PICKS ROCK, PAPER OR SCISSORS
+// COMPTER RANDOMLY PICKS ROCK, PAPER OR SCISSORS
+// COMPTER RANDOMLY PICKS ROCK, PAPER OR SCISSORS
+
+
+
+function computerChoice() {
+    let weaponArray = ["rock", "paper", "scissors"]
+    let weaponLength = weaponArray.length
+    let weaponPicker = Math.floor(Math.random()*weaponLength) 
+    let computerFinalPick = weaponArray[weaponPicker]
+    return computerFinalPick
+}
