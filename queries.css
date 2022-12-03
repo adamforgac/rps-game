@@ -1,0 +1,311 @@
+@media only screen and (min-width: 2500px) {
+    .opponents {
+        width: 1000px;
+    }
+
+    .wrapper {
+        align-items: center;
+    }
+
+    .logo img {
+        width: 260px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 660px) {
+    .heading-content h1 {
+        color: white;
+        font-size: 34px;
+        font-family: 'Bungee', cursive;
+        word-spacing: 35px;
+    }
+
+    .person-heading h2 {
+        color: white;
+        font-size: 50px;
+        font-family: 'Bungee', cursive;
+    }
+    
+    .person-image img {
+        max-width: 70px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+    }
+
+    .computer-image img {
+        max-width: 100px;
+        margin: 10px;
+    }
+    
+    .computer-heading h2 {
+        color: white;
+        font-size: 50px;
+        font-family: 'Bungee', cursive;
+        margin-left: 10px;
+    }
+
+    .versus-heading h2 {
+        font-size: 55px;
+        margin: 15px 0px 15px 0px;
+    }
+
+    .person, .computer {
+        justify-content: center;
+    }
+
+    .opponents {
+        margin: 30px 20px 0px 20px;
+        flex: 3;
+    }
+
+    .score p {
+        font-size: 27px;
+    }
+
+    .current-round {
+        font-size: 29px;
+
+    }
+
+    .weapons-heading h2 {
+        font-size: 30px;
+    }
+
+    .rock img {
+        max-width: 90px;
+        margin: 20px 30px 10px 30px;
+    }
+
+    .paper img {
+        max-width: 90px;
+        margin: 20px 30px 10px 30px;
+    }
+
+    .scissors img {
+        max-width: 90px;
+        margin: 20px 30px 10px 30px;
+    }
+
+    .logo img {
+        width: 60px;
+    }
+
+    .game-end-animation h2 {
+        font-size: 25px;
+        margin: 15px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 550px) {
+    .heading-content h1 {
+        font-size: 24px;
+        word-spacing: 25px;
+    }
+
+    .person-heading h2 {
+        font-size: 30px;
+    }
+    
+    .person-image img {
+        max-width: 60px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .computer-image img {
+        max-width: 80px;
+        margin-bottom: 10px;
+    }
+    
+    .computer-heading h2 {
+        font-size: 30px;
+        margin-left: 10px;
+    }
+
+    .versus-heading h2 {
+        font-size: 55px;
+        margin: 15px 0px 15px 0px;
+    }
+
+    .person, .computer {
+        justify-content: center;
+    }
+
+    .opponents {
+        margin: 30px 20px 30px 20px;
+    }
+
+    .score p {
+        font-size: 18px;
+    }
+
+    .current-round {
+        font-size: 29px;
+
+    }
+
+    .weapons-heading h2 {
+        font-size: 30px;
+    }
+
+    .rock img {
+        max-width: 90px;
+        margin: 20px 30px 10px 30px;
+    }
+
+    .paper img {
+        max-width: 90px;
+        margin: 20px 30px 10px 30px;
+    }
+
+    .scissors img {
+        max-width: 90px;
+        margin: 20px 30px 10px 30px;
+    }
+
+    .logo img {
+        width: 95px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 467px) {
+    .heading-content h1 {
+        font-size: 17px;
+        word-spacing: 20px;
+        margin-bottom: 0px;
+    }
+
+    .person-heading h2 {
+        font-size: 24px;
+    }
+    
+    .person-image img {
+        max-width: 60px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        display: none;
+    }
+
+    .computer-image img {
+        display: none;
+    }
+    
+    .computer-heading h2 {
+        color: white;
+        font-size: 24px;
+        margin-left: 10px;
+    }
+
+    .versus-heading h2 {
+        font-size: 40px;
+        margin: 15px 0px 15px 0px;
+    }
+
+    .person, .computer {
+        justify-content: center;
+    }
+
+    .opponents {
+        margin-top: 10px;
+    }
+
+    .score p {
+        font-size: 14px;
+    }
+
+    .current-round {
+        font-size: 29px;
+    }
+
+    .weapons-heading h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .rock img {
+        max-width: 60px;
+        margin: 20px 30px 10px 30px;
+    }
+
+    .paper img {
+        max-width: 60px;
+        margin: 20px 30px 10px 30px;
+    }
+
+    .scissors img {
+        max-width: 60px;
+        margin: 20px 30px 10px 30px;
+    }
+
+    .logo img {
+        width: 95px;
+    }
+
+    .rules p {
+      font-size: 30px;  
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .rules p {
+        font-size: 18px;  
+    }
+
+    .score p {
+        font-size: 14px;
+        margin-right: 5px;
+        margin-left: 5px;
+        text-align: center;
+    }
+
+    .current-round {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .rock img {
+        max-width: 50px;
+        margin: 20px 15px 10px 15px;
+    }
+
+    .paper img {
+        max-width: 50px;
+        margin: 20px 15px 10px 15px;
+    }
+
+    .scissors img {
+        max-width: 50px;
+        margin: 20px 15px 10px 15px;
+    }
+
+    .heading-content h1 {
+        font-size: 15px;
+        word-spacing: 6px;
+        margin-bottom: 0px;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row;
+    }
+    
+    .logo img {
+        width: 80px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 10px;
+    }
+}
+
