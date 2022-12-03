@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e4b054a4b4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="queries.css">
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+
+        <div class="heading-content">
+            <h1>ROCK PAPER SCISSORS</h1>
+        </div>
+
+
+        <div class="opponents">
+                <div class="person">
+                    <div class="visual-person">
+                        <div class="person-heading">
+                            <h2>Y<br>O<br>U</h2>
+                        </div>
+
+
+                        <div class="person-image">
+                            <img src="images/player-person.png" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="score">
+                        <p class="whole-score-number-player-1">SCORE: <span id="score-number-player-1">0</span></p>
+                    </div>
+                </div>
+
+
+                <div class="versus">
+                    <div class="rules">
+                        <p>FIRST TO WIN 5</p>
+                    </div>
+
+
+                    <div class="versus-heading">
+                        <h2>VS</h2>
+                    </div>
+
+
+                    <div class="current-round">
+                        <p>ROUND: <span id="game-round-number">0</span></p>
+                    </div>
+                </div>
+
+    
+                <div class="computer">
+                    <div class="visual-bot">
+                        <div class="computer-image">
+                            <img src="images/fight robot.png" alt="">
+                        </div>
+
+
+                        <div class="computer-heading">
+                            <h2>B<br>O<br>T</h2>
+                        </div>
+                    </div>
+
+
+                    <div class="score">
+                        <p class="whole-score-number-player-2">SCORE: <span id="score-number-player-2">0</span></p>
+                    </div>
+                </div>
+        </div>
+
+
+        <div class="weapons">
+            <div class="weapons-heading">
+                <h2 id="game-state">CHOOSE YOUR WEAPON</h2>
+            </div>
+
+
+            <div class="weapon-options">
+                <div class="rock button">
+                    <img id="rock" src="images/rock.png" alt="">
+                </div>
+
+
+                <div class="paper button">
+                    <img id="paper" src="images/paper.png" alt="">
+                </div>
+
+
+                <div class="scissors button">
+                    <img id="scissors" src="images/scissors.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="end-game-screen">
+            <div class="game-end-heading">
+                <h2 id="end-heading"></h2>
+            </div>
+
+            <div class="game-end-offer">
+                <p>Wanna play again?</p>
+            </div>
+
+            <div class="game-end-symbol">
+                <i class="fa-solid fa-arrows-rotate"></i>
+            </div>
+        </div>
+
+
+        <div class="footer-content">
+            <div class="logo">
+                <img src="images/logo-white.svg" alt="">
+            </div>
+        </div> 
+    </div>
+
+
+    <div class="end-game-screen">
+        <div class="game-end-heading">
+            <h2 id="end-heading"></h2>
+        </div>
+
+
+        <div class="game-end-offer">
+            <p>Wanna play again?</p>
+        </div>
+
+
+        <div class="game-end-symbol">
+            <i class="fa-solid fa-arrows-rotate"></i>
+        </div>
+    </div>
+</body>
+
+
+<script src="script.js"></script>
+</html>

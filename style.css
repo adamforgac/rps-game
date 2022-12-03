@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: black;
+}
+
+body {
+    background-color: black;
+    background: url(images/back1.jpeg);
+    background-size: cover;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 500;
+    height: 100vh;
+    width: 100vw;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+/* HEADING */
+
+
+.heading-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px 0px 20px;
+}
+
+.heading-content h1 {
+    color: white;
+    font-size: 55px;
+    font-family: 'Bungee', cursive;
+    word-spacing: 40px;
+}
+
+.game-color {
+    color: rgb(100, 103, 206)
+}
+
+
+
+
+/* OPPONENTS */
+/* OPPONENTS */
+/* OPPONENTS */
+
+
+
+
+.opponents {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 50px 20px 40px;
+    background-color: black;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border:1px solid rgb(100, 103, 206);
+    flex: 4;
+}
+
+.person, .computer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.visual-person, .visual-bot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* PERSON */
+
+
+.person-heading h2 {
+    color: white;
+    font-size: 80px;
+    font-family: 'Bungee', cursive;
+    margin: 10px;
+}
+
+.person-image img {
+    max-width: 110px;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+.score p {
+    color: white;
+    font-size: 30px;
+    font-family: 'Bungee', cursive;
+    margin-top: 20px;
+}
+
+
+/* VERSUS */
+
+
+.versus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.versus-heading h2 {
+    color: white;
+    font-size: 110px;
+    font-family: 'Bungee', cursive;
+    color: rgb(100, 103, 206);
+}
+
+.rules p {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 60px;
+    font-family: 'Bangers', cursive;
+    text-align: center;
+}
+
+.current-round {
+    color: white;
+    font-size: 40px;
+    margin-top: 60px;
+    font-family: 'Bangers', cursive;
+}
+
+
+/* COMPUTER */
+
+
+.computer-image img {
+    max-width: 150px;
+    margin: 10px;
+}
+
+.computer-heading h2 {
+    color: white;
+    font-size: 80px;
+    font-family: 'Bungee', cursive;
+    margin: 15px;
+}
+
+
+
+
+/* WEAPONS */
+/* WEAPONS */
+/* WEAPONS */
+
+
+
+
+.weapons {
+    display: flex;
+    flex-direction: column;
+    flex: 1.5;
+}
+
+.weapons-heading  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weapons-heading h2 {
+    color: white;
+    font-family: 'Bangers', cursive;
+    font-size: 40px;
+}
+
+.weapon-options {
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;
+    align-items: center;
+
+}
+
+.rock img {
+    max-width: 130px;
+    margin: 50px 60px 20px 60px;
+    transition: 0.7s;
+}
+
+.rock img:hover {
+    scale: 1.3;
+    cursor: pointer;
+}
+
+.paper img {
+    max-width: 130px;
+    margin: 50px 60px 20px 60px;
+    transition: 0.7s;
+}
+
+.paper img:hover {
+    scale: 1.3;
+    cursor: pointer;
+}
+
+.scissors img {
+    max-width: 130px;
+    margin: 50px 60px 20px 60px;
+    transition: 0.7s;
+}
+
+.scissors img:hover {
+    scale: 1.3;
+    cursor: pointer;
+}
+
+
+/* END GAME SCREEN  */
+
+
+.end-game-screen {
+    position: absolute;
+    opacity: 1;
+    top: -100%;
+    transition: 1s;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.game-end-animation {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+    top: 0%;
+    transition: 1s;
+}
+
+.game-end-animation h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Bungee', cursive;
+    text-align: center;
+    padding: 10px;
+}
+
+.game-end-animation p {
+    color: white;
+    margin-top: 40px;
+    font-family: 'Bungee', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+.game-end-symbol i {
+    color: white;
+    margin-top: 80px;
+    font-size: 70px;
+    animation: rotation 5s linear infinite;
+    transition: 1s;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg)
+
+    } 50% {
+        transform: rotate(180deg);
+
+    } 100% {
+        transform: rotate(360deg);
+
+    }
+}
+
+.game-end-symbol {
+    transition: 1s;
+}
+
+.game-end-symbol:hover {
+    scale: 1.2;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.game-end-animation i:hover {
+    transition: 1s;
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+.logo img {
+    width: 110px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 10px;
+}
