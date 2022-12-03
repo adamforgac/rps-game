@@ -49,3 +49,64 @@ function computerChoice() {
     let computerFinalPick = weaponArray[weaponPicker]
     return computerFinalPick
 }
+
+
+
+// ONE ROUND OF THE GAME
+// ONE ROUND OF THE GAME
+// ONE ROUND OF THE GAME
+
+
+
+function playRound(playerSelection, computerSelection) {
+    if(
+        playerSelection == "rock" && computerSelection == "scissors" ||
+        playerSelection == "paper" && computerSelection == "rock" ||
+        playerSelection == "scissors" && computerSelection == "paper"
+
+
+    ) {
+        playerScore++
+        gameRound++
+
+        document.querySelector("#score-number-player-1").textContent = playerScore
+        document.querySelector("#game-round-number").textContent = gameRound
+        document.querySelector("#game-state").textContent = `You won! ${playerSelection} beats ${computerSelection}`
+
+        if(playerScore === 5) {
+            winPlayer()
+        }
+
+
+    } else if(
+        playerSelection == "rock" && computerSelection == "paper" ||
+        playerSelection == "paper" && computerSelection == "scissors" ||
+        playerSelection == "scissors" && computerSelection == "rock"
+
+
+    ) {
+        computerScore++
+        gameRound++
+        document.querySelector("#game-round-number").textContent = gameRound
+        document.querySelector("#score-number-player-2").textContent = computerScore
+        document.querySelector("#game-state").textContent = `You lost! ${computerSelection} beats ${playerSelection}`
+
+        if(computerScore === 5) {
+            winComputer()
+        }
+
+
+    } else if(
+        playerSelection == "rock" && computerSelection == "rock" ||
+        playerSelection == "paper" && computerSelection == "paper" ||
+        playerSelection == "scissors" && computerSelection == "scissors"
+
+
+    ) {
+        gameRound++
+        document.querySelector("#game-round-number").textContent = gameRound
+        document.querySelector("#game-state").textContent = "It's a tie, keep going!"
+
+
+    }
+}
