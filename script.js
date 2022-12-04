@@ -132,3 +132,17 @@ function winPlayer() {
     paper.removeEventListener;
     scissors.removeEventListener;
 }
+
+
+// IF COMPUTER WINS
+
+
+function winComputer() {
+    document.querySelector(".end-game-screen").classList.add("game-end-animation");
+    document.querySelector("#end-heading").textContent = "You lost...Better luck next time!";
+    const resetButton = document.querySelector(".game-end-symbol");
+    resetButton.addEventListener("click", playNewGame);
+    rock.removeEventListener("click");
+    paper.removeEventListener("click");
+    scissors.removeEventListener("click");
+}
