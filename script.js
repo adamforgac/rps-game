@@ -110,3 +110,25 @@ function playRound(playerSelection, computerSelection) {
 
     }
 }
+
+
+
+// THE GAME STOPS IF PLAYER OR COMPUTER REACHES SCORE OF 5
+// THE GAME STOPS IF PLAYER OR COMPUTER REACHES SCORE OF 5
+// THE GAME STOPS IF PLAYER OR COMPUTER REACHES SCORE OF 5
+
+
+
+// IF PLAYER WINS
+
+
+function winPlayer() {
+    const gameEndAnimation = document.querySelector(".end-game-screen");
+    gameEndAnimation.classList.add("game-end-animation");
+    document.querySelector("#end-heading").textContent = "Congrats, you won the game.";
+    const resetButton = document.querySelector(".game-end-symbol");
+    resetButton.addEventListener("click", playNewGame);
+    rock.removeEventListener;
+    paper.removeEventListener;
+    scissors.removeEventListener;
+}
