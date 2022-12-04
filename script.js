@@ -146,3 +146,19 @@ function winComputer() {
     paper.removeEventListener("click");
     scissors.removeEventListener("click");
 }
+
+
+
+// NEW GAME 
+
+
+function playNewGame() {
+    gameRound = 0
+    playerScore = 0
+    computerScore = 0
+    document.querySelector(".end-game-screen").classList.remove("game-end-animation");
+    document.querySelector("#game-round-number").textContent = 0
+    document.querySelector("#score-number-player-2").textContent = 0
+    document.querySelector("#score-number-player-1").textContent = 0
+    document.querySelector("#game-state").textContent = "Choose your weapon"
+}
