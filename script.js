@@ -161,4 +161,5 @@ function playNewGame() {
     document.querySelector("#score-number-player-2").textContent = 0
     document.querySelector("#score-number-player-1").textContent = 0
     document.querySelector("#game-state").textContent = "Choose your weapon"
+    
 }
