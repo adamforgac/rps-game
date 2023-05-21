@@ -12,8 +12,23 @@
     }
 }
 
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+    .heading-content h1 {
+        font-size: 2.2rem;
+        word-spacing: 35px;
+    }
 
+    .weapons-heading  {
+        margin-top: 20px;
+    }
+}
 
+@media only screen and (max-width: 800px) {
+    .heading-content h1 {
+        font-size: 2rem;
+        word-spacing: 35px;
+    }
+}
 
 @media only screen and (max-width: 660px) {
     .heading-content h1 {
